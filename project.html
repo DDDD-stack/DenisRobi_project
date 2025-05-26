@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <title>Audi</title>
+    <body>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .present{
+                font-weight: 400;
+                text-align: center;
+                font-size: 75px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                background-color: black;
+                color: #fff;
+
+            }
+            h1{
+                text-align: center;
+            }
+
+            .logo{
+                max-width: 7%;
+            }
+
+            .li{
+                background-color: grey;
+                text-align: center;
+                margin-top: 0px;
+                justify-content: space-between;
+            }
+
+            nav {
+            background-color: lightgrey; 
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            }
+
+            nav ul {
+            list-style-type: none;
+            background: lightgrey;
+            }
+
+            nav ul li {
+            display: inline-block;
+            position: relative;
+            }
+
+            nav ul li a {
+            display: block;
+            padding: 20px 25px;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+            }
+
+            ul li ul.dropdown li{
+                display: block;
+            }
+
+            ul li ul.dropdown{
+                width: 100%;
+                background: lightgrey;
+                position: absolute;
+                z-index: 999;
+                display: none;
+            }
+
+            ul li a:hover{
+                background-color: #fff;
+            }
+
+            ul li:hover ul.dropdown{
+                display: block;
+            }
+
+            h2{
+                text-align: center;
+            }
+            .br{
+                background-image: url('logo2.jpg');
+                padding-top: 50px;
+                background-size: 4%;
+            }
+            
+            .hq{
+                max-width: 25%;
+                align-self: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                box-shadow: 10px 10px 20px black;
+            }
+
+            .container{
+              position: relative;  
+            }
+
+            .container .wrapper{
+                width: 20vw;
+                height: 20vh;
+                box-shadow: 10px 10px 20px black;
+                margin: 5rem auto;
+                overflow: hidden;
+            }
+
+            .container .wrapper-holder{
+                display: grid;
+                grid-template-columns: repeat(4, 100%);
+                height: 100%;
+                width: 100%;
+                animation: slider 30s ease-in-out infinite alternate;
+            }
+
+            .container #slider-image-1{
+                background-image: url('q8.jpg');
+                background-position: center;
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+
+            .container #slider-image-2{
+                background-image: url('q6.jpg');
+                background-position: center;
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+
+            .container #slider-image-3{
+                background-image: url('a8.jpg');
+                background-position: center;
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+
+            .container #slider-image-4{
+                background-image: url('a7.jpg');
+                background-position: center;
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+
+            .container #slider-image-5{
+                background-image: url('rset.jpg');
+                background-position: center;
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+
+            .container #slider-image-6{
+                background-image: url('rs6.jpg');
+                background-position: center;
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+
+            .container #slider-image-7{
+                background-image: url('q4.jpg');
+                background-position: center;
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            
+            .container .button-holder .button{
+                background-color: black;
+                width: 15px;
+                height: 15px;
+                border-radius: 15px;
+                display: inline-block;
+                margin: .3rem;
+            }
+
+            .container .button-holder{
+                position: absolute;
+                left: 45%;
+                bottom: 0%;     
+            }
+
+            @keyframes slider{
+                0%{transform: translateX(0%);}
+                10%{transform: translateX(-100%);}
+                20%{transform: translateX(-100%);}
+                30%{transform: translateX(-200%);}
+                40%{transform: translateX(-200%);}
+                50%{transform: translateX(-200%);}
+                60%{transform: translateX(-300%);}
+                70%{transform: translateX(-300%);}
+                80%{transform: translateX(-300%);}
+                90%{transform: translateX(0%);}
+                100%{transform: translateX(0%);}
+
+            }
+
+            .q5{
+                max-width: 25%;
+                align-self: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+            .a3{
+                max-width: 25%;
+                align-self: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+
+            a{
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+        </style>
+        <main>
+            <div>
+            <h1 class="present">AUDI</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Our Cars</a>
+                    <ul class="dropdown">
+                        <li><a href="#SUV">Basic SUV</a></li>
+                        <li><a href="#Sedan">Basic Sedan</a></li>
+                        <li>Luxury Sedan/SUV</li>
+                        <li>Hatchback</li>
+                    </ul>
+                </li>
+
+                    <li><a href="#">Inovations</a>
+                    <ul class="dropdown">
+                        <li>Product Inovation</li>
+                        <li>Future Inovations</li>
+                    </ul>
+                </li> 
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </nav>
+            
+                <div>
+                <h1>Company</h1>
+                <h2>The AUDI AG stands for sporty vehicles, high build quality and progressive design – for “Vorsprung durch Technik.” The Audi Group is among the world’s leading producers of premium cars. To play an instrumental role in shaping the transformation as we head into a new age of mobility the Company is implementing its strategy step by step.</h2>
+                </div>
+
+                <img class="hq" src="C:\Users\User\Desktop\project\audihq.jpg" alt="Audi HQ">
+
+                <h1 class="br"></h1>
+
+                <h1>Our Vehicles</h1>
+                <h2>Step into the future of automotive excellence with Audi. Experience unparalleled craftsmanship, cutting-edge technology, and exhilarating performance in every drive. From sleek sedans to dynamic SUVs, Audi offers a lineup designed to elevate your journey. Immerse yourself in luxurious comfort while pushing the boundaries of innovation. With a commitment to elegance and precision engineering, Audi delivers a driving experience that's as thrilling as it is refined. Elevate your expectations with Audi, where every ride is a masterpiece of German engineering. Discover the ultimate fusion of performance and sophistication today.</h2>
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="wrapper-holder">
+                            <div id="slider-image-1"></div>
+                            <div id="slider-image-2"></div>
+                            <div id="slider-image-3"></div>
+                            <div id="slider-image-4"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-holder">
+                    <a href="#slider-image-1" class="button"></a>
+                    <a href="#slider-image-2" class="button"></a>
+                    <a href="#slider-image-3" class="button"></a>
+                    <a href="#slider-image-4" class="button"></a>
+                    <a href="#slider-image-5" class="button"></a>
+                    <a href="#slider-image-6" class="button"></a>
+                    <a href="#slider-image-7" class="button"></a>
+                </div>
+
+                <h1 class="br"></h1>
+
+                <h1 id="SUV">Basic SUV</h1>
+
+                <h2>Introducing the Audi Q5: where affordability meets luxury. Crafted with precision and designed for versatility, the Q5 is the perfect choice for budget-conscious buyers seeking comfort without compromise. Experience spacious interiors adorned with premium materials, advanced technology at your fingertips, and dynamic performance that excites. With its efficient yet powerful engine options and renowned Quattro all-wheel drive system, the Q5 delivers a confident and engaging ride on any road.Wait no longer and elevate your driving experience without breaking the bank with the Audi Q5 – where affordability meets uncompromised comfort.(Build and Order by clicking the image)
+
+
+
+
+
+                </h2>
+
+                <a href="https://www.audiusa.com/us/web/en/models/q5/q5/2024/overview/build.html"><img class="q5" src="C:\Users\User\Desktop\project\q5.jpg" alt="Audi Q5" ></a>
+
+                <h1 class="br"></h1>
+
+                <h1 id="Sedan">Basic Sedan</h1>
+
+                <h2>Introducing the Audi A3: the epitome of compact luxury and efficiency. Seamlessly blending style with substance, this sedan offers a refined driving experience without sacrificing practicality. Revel in the sumptuous interior, adorned with premium materials and innovative technology at your command. The A3's sleek design commands attention while its efficient engine options deliver spirited performance with remarkable fuel economy. Whether navigating city streets or open highways, the Audi A3 provides a luxurious and exhilarating ride.Elevate your daily drive with the perfect fusion of compact efficiency and uncompromised luxury – the Audi A3.(Build and Order by clicking the image)</h2>
+
+                <a href="https://www.audiusa.com/us/web/en/models/a3/a3/2024/overview/build.html"><img class="a3" src="C:\Users\User\Desktop\project\a3.jpg"></a>
+                
+        </main>
+    </body>
+</html>
